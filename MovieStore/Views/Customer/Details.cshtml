@@ -1,0 +1,49 @@
+﻿@using Microsoft.Ajax.Utilities
+@model MovieStore.Models.Customers
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.CustomerName</h2>
+
+@*<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Membership Type</th>
+        <th>Date Of Birth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            @Model.MembershipType.Name
+        </td>
+        <td>
+            @if (Model.BirthDate.IsNullOrWhiteSpace())
+            {
+                <b>----</b>
+            }
+            else
+            {
+
+                @Model.BirthDate
+            }
+        </td>
+    </tr>
+    </tbody>
+</table>*@
+
+@*<p>Membership Type: @Model.MembershipType.Name</p>
+
+@if (Model.BirthDate.IsNullOrWhiteSpace())
+{
+    <p><b>BirthDate:</b> ---</p>
+}
+else
+{
+
+    <p><b>BirthDate:</b> @Model.BirthDate</p>
+}*@
+
